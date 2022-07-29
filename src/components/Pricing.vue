@@ -115,7 +115,7 @@
             </div>
             <div class="tiles-wrap">
                 <PricingItem
-                    v-for="item in pricings"
+                    v-for="item in pricings || []"
                     :item="item"
                     :key="item.id"
                 ></PricingItem>

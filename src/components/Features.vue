@@ -33,7 +33,7 @@
         <div class="features-tiles-inner section-inner">
             <div class="tiles-wrap">
                 <FeatureItem
-                    v-for="item in features"
+                    v-for="item in features || []"
                     :key="item.id"
                     :item="item"
                 ></FeatureItem>
