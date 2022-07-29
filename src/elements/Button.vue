@@ -1,40 +1,33 @@
-<script>
-    export default {
-        data() {
-            const classNames = [];
-            if (this.className) {
-                const className = this.className.split(" ");
-                classNames.push(className);
-            }
+<script setup>
+    const props = defineProps({
+        className: String,
+        isPrimary: Boolean,
+        isWideMobile: Boolean,
+        isSmall: Boolean,
+        isBlock: Boolean,
+    });
 
-            if (this.isPrimary) {
-                classNames.push("button-primary");
-            }
+    const classNames = [];
+    if (props.className) {
+        const className = props.className.split(" ");
+        classNames.push(className);
+    }
 
-            if (this.isWideMobile) {
-                classNames.push("button-wide-mobile");
-            }
+    if (props.isPrimary) {
+        classNames.push("button-primary");
+    }
 
-            if (this.isSmall) {
-                classNames.push("button-sm");
-            }
+    if (props.isWideMobile) {
+        classNames.push("button-wide-mobile");
+    }
 
-            if (this.isBlock) {
-                classNames.push("button-block");
-            }
+    if (props.isSmall) {
+        classNames.push("button-sm");
+    }
 
-            return {
-                classNames: classNames.join(" "),
-            };
-        },
-        props: {
-            className: String,
-            isPrimary: Boolean,
-            isWideMobile: Boolean,
-            isSmall: Boolean,
-            isBlock: Boolean,
-        },
-    };
+    if (props.isBlock) {
+        classNames.push("button-block");
+    }
 </script>
 
 <template>

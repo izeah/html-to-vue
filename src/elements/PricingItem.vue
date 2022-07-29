@@ -1,11 +1,16 @@
-<script setup>
+<script>
     import Button from "./Button.vue";
-    defineProps({
-        item: {
-            type: Object,
-            required: true,
+    export default {
+        props: {
+            item: {
+                type: Object,
+                required: true,
+            },
         },
-    });
+        components: {
+            Button,
+        },
+    };
 </script>
 
 <template>

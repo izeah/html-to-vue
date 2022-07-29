@@ -13,17 +13,17 @@
         <Header></Header>
         <main class="site-content">
             <Section
-                class="section hero center-content illustration-section-01"
+                className="section hero center-content illustration-section-01"
             >
                 <Hero></Hero>
             </Section>
-            <Section class="section clients">
+            <Section className="section clients">
                 <Clients></Clients>
             </Section>
-            <Section class="section features-tiles">
+            <Section className="section features-tiles">
                 <Features></Features>
             </Section>
-            <Section class="section pricing">
+            <Section className="section pricing">
                 <Pricing></Pricing>
             </Section>
         </main>

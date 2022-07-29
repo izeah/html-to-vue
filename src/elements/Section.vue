@@ -1,13 +1,11 @@
 <script setup>
     defineProps({
-        class: {
-            type: String,
-        },
+        className: String,
     });
 </script>
 
 <template>
-    <section :class="class"><slot>Section</slot></section>
+    <section :class="className"><slot>Section</slot></section>
 </template>
 
 <style scoped></style>
