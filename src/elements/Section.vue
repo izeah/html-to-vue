@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <section :class="className"><slot>Section</slot></section>
+    <section :class="className"><slot></slot></section>
 </template>
 
 <style scoped></style>

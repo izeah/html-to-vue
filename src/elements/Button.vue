@@ -31,7 +31,7 @@
 </script>
 
 <template>
-    <button :class="classNames"><slot>Button</slot></button>
+    <button :class="classNames"><slot></slot></button>
 </template>
 
 <style scoped></style>
